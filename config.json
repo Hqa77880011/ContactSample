@@ -1,0 +1,36 @@
+{
+  "seed": 11,
+  "rates_hz": [
+    16.0,
+    32.0,
+    64.0
+  ],
+  "epoch_s": 2.0,
+  "window_s": 8.0,
+  "probe_s": 0.5,
+  "probe_gap_s": 8.0,
+  "recovery_s": 8.0,
+  "dwell_s": 4.0,
+  "stale_display_s": 10.0,
+  "reserved_recoveries": 2,
+  "block_s": 60.0,
+  "cap_mw": 9.0,
+  "base_mw": 0.9,
+  "readout_mj": 0.14,
+  "switch_mj": 1.2,
+  "packet_mj": 0.4,
+  "cpu_mj": [
+    0.01,
+    0.05,
+    0.25
+  ],
+  "quality_threshold": 0.7,
+  "quality_error_bpm": 15,
+  "missing_penalty_bpm": 15,
+  "belief_decay_s": 12,
+  "fit_epochs": 100,
+  "analog_bandwidth_hz": 4,
+  "acquisition_tier": "sensor",
+  "queue_limit": 8,
+  "phone_connection_column": false
+}
