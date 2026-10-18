@@ -33,8 +33,8 @@ python -m contactsample run --config config.json --output outputs
 
 ## Outputs
 
-Preparation writes the manifest. The output folder contains `model.pt`, per-record/per-policy JSON ledgers, `metrics.json` and `power_service.png`. Energy figures use configured model costs.
+Preparation writes the manifest. The output folder contains `policy.pt`, per-record/per-policy JSON ledgers, `metrics.json` and `power_service.png`. Energy figures use configured model costs.
 
 Keep `config.json` with the run; it contains model/data settings and the seed where the CLI does not expose one. Use separate output directories for different seeds/conditions.
 
-Source inspection: Python 3.13.5, numpy 2.1.3, pandas 2.2.3, scipy 1.15.3, torch 2.7.1+cu118, matplotlib 3.10.0 (installed versions inspected). Checks covered Python syntax, configuration parsing and CLI arguments. No training, full evaluation or CI was run in this update.
+Source inspection: Python 3.13.5, numpy 2.1.3, pandas 2.2.3, scipy 1.15.3, torch 2.7.1+cu118, matplotlib 3.10.0 (installed versions inspected). Checks covered Python syntax, configuration parsing and CLI arguments. No training or full evaluation was run. The GitHub Actions workflow checks source syntax and package installation plus undefined-name/import linting.
